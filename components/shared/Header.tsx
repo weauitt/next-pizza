@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
+import Logo from "../../app/Logo.png";
 import { Container } from "./index";
-import React from "react";
 import Image from "next/image";
 import { Button } from "../ui";
 import { ArrowRight, ShoppingCart, User } from "lucide-react";
@@ -14,7 +14,7 @@ export const Header: React.FC<Props> = ({ className }) => {
     <header className={cn("border-b", className)}>
       <Container className="flex items-center justify-between py-8">
         <div className="flex items-center gap-4">
-          <Image src="/logo.png" alt="Logo" width={35} height={35} />
+          <Image src={Logo} alt="Logo" width={35} height={35} />
           <div>
             <h1 className="text-2xl uppercase font-black">Next Pizza</h1>
             <p className="text-sm text-gray-400 leading-3">
@@ -40,7 +40,6 @@ export const Header: React.FC<Props> = ({ className }) => {
               className="absolute right-5 transition duration-300 -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0"
             />
           </Button>
-          
         </div>
       </Container>
     </header>
