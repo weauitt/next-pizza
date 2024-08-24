@@ -26,6 +26,8 @@ export const Filter: React.FC<Props> = ({ className }) => {
         <RangeSlider min={0} max={5000} step={10} value={[0, 5000]} />
       </div>
 
+      
+
     </div>
   );
 };
